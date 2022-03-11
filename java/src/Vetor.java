@@ -11,4 +11,13 @@ public class Vetor {
 	public String toString() {
 		return "Vetor [elementos=" + Arrays.toString(elementos) + "]";
 	}
+	
+	public void adiciona(String elemento) {
+		for(int i=0; i < elementos.length; i++) {
+			if(elementos[i] == null) {
+				elementos[i] = elemento;
+				break;
+			}
+		}
+	}
 }
